@@ -2,6 +2,7 @@
     {
         "nome": "Paróquia São Gonçalo",
         "bairro": "Centro",
+        "endereco": "Rua Bueno Brandão, 40",
         "missas": [
             "Domingo: 07h, 09h, 19h",
             "Quarta: 19h"
@@ -13,9 +14,13 @@
     {
         "nome": "Paróquia Nossa Senhora da Glória",
         "bairro": "Eldorado",
+        "endereco": "Praça Nossa Senhora da Glória, s/n",
         "missas": [
+            "Quarta: 16h",
+            "Quinta: 19h",
+            "Sexta: 19h",
             "Sábado: 18h",
-            "Domingo: 08h, 10h, 18h"
+            "Domingo: 07h, 09h, 18h"
         ],
         "confissoes": [
             "Olhar com o Celebrante após a missa"
@@ -24,6 +29,7 @@
     {
         "nome": "Santuário Arquidiocesano Nossa Senhora da Conceição Aparecida",
         "bairro": "Novo Eldorado",
+        "endereco": "Praça Nossa Senhora da Conceição, 150",
         "missas": [
             "Segunda: 7:30h",
             "Terça: 7:30h, 19h",
@@ -32,16 +38,17 @@
             "Sexta: 7:30h, 19h",
             "Sábado: 7:30h, 18h",
             "Domingo: 07h, 09h, 11h, 18h",
-            "Todo dia 12 do mês: 7:30h, 12h, 19h"
+            "Todo dia 12 do mês (exceto aos domingos): 7:30h, 12h, 19h"
         ],
         "confissoes": [
-            "Terça, Quarta, Quinta, Sexta, Sábado: 08:40 (A depender do Celebrante)",
-            "Todo dia 12 do mês: 09h às 11h"
+            "Terça, Quarta, Quinta, Sexta, Sábado: Após a missa das 7:30 (A depender do Celebrante)",
+            "Todo dia 12 do mês (exceto aos domingos): 09h às 11h"
         ]
     },
     {
         "nome": "Paroquia São Judas Tadeu",
         "bairro": "Gloria",
+        "endereco": "Rua Bélgica, 132",
         "missas": [
             "Terça: 19h",
             "Quinta: 19h",
@@ -57,6 +64,7 @@
     {
         "nome": "Paroquia São Sebastião",
         "bairro": "Eldorado",
+        "endereco": "Rua Altino Ribeiro, 141",
         "missas": [
             "Quarta: 19h",
             "Sábado: 18h",
