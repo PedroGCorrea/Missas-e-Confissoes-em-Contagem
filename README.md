@@ -1,3 +1,8 @@
+👨‍💻 Criador
+Desenvolvido por Pedro Guimarães de Deus Corrêa.
+
+Que este projeto possa ajudar muitos fiéis a estarem mais próximos da vida sacramental em nossa cidade.
+
 # Missas e Confissões em Contagem ⛪
 
 Este projeto é uma ferramenta desenvolvida para centralizar e facilitar a consulta de horários de missas e confissões nas paróquias da cidade de Contagem, Minas Gerais. 
@@ -34,8 +39,3 @@ Se desejar sugerir uma atualização, certifique-se de que os dias da semana est
     "confissoes": ["Terça, Quarta, Quinta: 14h às 17h"]
 }
 
-
-👨‍💻 Criador
-Desenvolvido por Pedro Guimarães de Deus Corrêa.
-
-Que este projeto possa ajudar muitos fiéis a estarem mais próximos da vida sacramental em nossa cidade.
