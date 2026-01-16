@@ -1,0 +1,42 @@
+[
+    {
+        "nome": "Paróquia São Gonçalo",
+        "bairro": "Centro",
+        "missas": [
+            "Domingo: 07h, 09h, 19h",
+            "Quarta: 19h"
+        ],
+        "confissoes": [
+            "Terça, Quarta, Quinta, Sexta: 14h às 17h"
+        ]
+    },
+    {
+        "nome": "Paróquia Nossa Senhora da Glória",
+        "bairro": "Eldorado",
+        "missas": [
+            "Sábado: 18h",
+            "Domingo: 08h, 10h, 18h"
+        ],
+        "confissoes": [
+            "Quinta: 09h às 11h"
+        ]
+    },
+    {
+        "nome": "Santuário Arquidiocesano Nossa Senhora da Conceição Aparecida",
+        "bairro": "Novo Eldorado",
+        "missas": [
+            "Segunda: 7:30h",
+            "Terça: 7:30h, 19h",
+            "Quarta: 7:30h, 19h",
+            "Quinta: 7:30h",
+            "Sexta: 7:30h, 19h",
+            "Sábado: 7:30h, 18h",
+            "Domingo: 07h, 9h, 11h, 18h",
+            "Todo dia 12 do mês: 7:30h, 12h, 19h"
+        ],
+        "confissoes": [
+            "Terça, Quarta, Quinta, Sexta, Sábado: 08:40 (A depender do Celebrante)",
+            "Todo dia 12 do mês: 09h às 11h"
+        ]
+    }
+]

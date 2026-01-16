@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missa Contagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Missas e confissões em Contagem</h1>
+        <div class="filter-group">
+            <input type="text" id="filterNome" placeholder="Nome da Paróquia...">
+
+            <select id="filterBairro">
+                <option value="">Todos os Bairros</option>
+            </select>
+
+            <select id="filterDateMissa">
+                <option value="">Qualquer Dia (Missa)</option>
+                <option value="Segunda">Segunda-feira</option>
+                <option value="Terça">Terça-feira</option>
+                <option value="Quarta">Quarta-feira</option>
+                <option value="Quinta">Quinta-feira</option>
+                <option value="Sexta">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <input type="text" id="filterMissa" placeholder="Horário de Missa (ex: 19:00)">
+            <select id="filterDateConfissao">
+                <option value="">Qualquer Dia (Confissão)</option>
+                <option value="Segunda">Segunda-feira</option>
+                <option value="Terça">Terça-feira</option>
+                <option value="Quarta">Quarta-feira</option>
+                <option value="Quinta">Quinta-feira</option>
+                <option value="Sexta">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <input type="text" id="filterConfissao" placeholder="Horário de Confissão">
+        </div>
+    </header>
+
+    <main id="parishContainer">
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Missas e confissões em Contagem - Informações atualizadas pela comunidade.</p>
+    </footer>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>

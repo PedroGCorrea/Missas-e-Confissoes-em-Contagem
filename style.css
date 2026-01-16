@@ -1,0 +1,132 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #1a237e;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.filter-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.filter-group input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    min-width: 200px;
+}
+
+#parishContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Listagem 2 em 2 */
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-top: 6px solid #1a237e;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* Espaço entre os blocos cinzas */
+}
+
+.bairro-tag {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    display: block;
+    font-weight: bold;
+    color: #1a237e;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.horarios-list {
+    line-height: 1.6;
+    /* Aumenta o espaço entre as linhas dos horários */
+    font-size: 1rem;
+    color: #444;
+    padding-left: 5px;
+}
+
+
+/* Responsividade: 1 coluna em telas pequenas */
+@media (max-width: 768px) {
+    #parishContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #parishContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.filter-group select {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.card h2 {
+    color: #1a237e;
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+}
+
+.info-box {
+    background-color: #f2f2f2;
+    /* Cinza claro */
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.info-box span {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #1a237e;
+    margin-bottom: 5px;
+}
+
+.detalhe,
+.horarios-list {
+    margin: 0;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
