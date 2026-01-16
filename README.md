@@ -27,7 +27,7 @@ O objetivo é servir à comunidade católica local, oferecendo uma interface sim
 
 ## 📂 Como Contribuir com Dados
 
-O projeto é alimentado de forma colaborativa. Para manter a precisão dos filtros, seguimos um padrão rigoroso no arquivo `paroquias.json`.
+O projeto é alimentado de forma colaborativa. Para manter a precisão dos filtros, seguimos um padrão rigoroso no arquivo `database.json`.
 
 Se desejar sugerir uma atualização, certifique-se de que os dias da semana estejam escritos por extenso (ex: "Segunda, Terça, Quarta") para que o motor de busca consiga identificar os horários corretamente.
 
