@@ -18,7 +18,7 @@
             "Domingo: 08h, 10h, 18h"
         ],
         "confissoes": [
-            "Quinta: 09h às 11h"
+            "Olhar com o Celebrante após a missa"
         ]
     },
     {
@@ -31,12 +31,41 @@
             "Quinta: 7:30h",
             "Sexta: 7:30h, 19h",
             "Sábado: 7:30h, 18h",
-            "Domingo: 07h, 9h, 11h, 18h",
+            "Domingo: 07h, 09h, 11h, 18h",
             "Todo dia 12 do mês: 7:30h, 12h, 19h"
         ],
         "confissoes": [
             "Terça, Quarta, Quinta, Sexta, Sábado: 08:40 (A depender do Celebrante)",
             "Todo dia 12 do mês: 09h às 11h"
+        ]
+    },
+    {
+        "nome": "Paroquia São Judas Tadeu",
+        "bairro": "Gloria",
+        "missas": [
+            "Terça: 19h",
+            "Quinta: 19h",
+            "Sábado: 19h",
+            "Domingo: 07h, 09:30h, 19h",
+            "Primeira Sexta de cada mes: 19h",
+            "Todo dia 28: 06h, 08h, 10h, 15h, 18h, 20h"
+        ],
+        "confissoes": [
+            "Marcar na secretaría: (31) 3392-2055 / psjt@terra.com.br"
+        ]
+    },
+    {
+        "nome": "Paroquia São Sebastião",
+        "bairro": "Eldorado",
+        "missas": [
+            "Quarta: 19h",
+            "Sábado: 18h",
+            "Domingo: 08h, 18h",
+            "Primeira Sexta de cada mes: 18h",
+            "Todo dia 20: 19h"
+        ],
+        "confissoes": [
+            "Marcar na secretaría: (31) 3392-2055 / psjt@terra.com.br"
         ]
     }
 ]
