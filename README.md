@@ -1,7 +1,8 @@
-👨‍💻 Criador
-Desenvolvido por Pedro Guimarães de Deus Corrêa.
+#👨‍💻 Criador<br>
 
-Que este projeto possa ajudar muitos fiéis a estarem mais próximos da vida sacramental em nossa cidade.
+**Desenvolvido por Pedro Guimarães de Deus Corrêa.
+
+**Que este projeto possa ajudar muitos fiéis a estarem mais próximos da vida sacramental em nossa cidade.
 
 # Missas e Confissões em Contagem ⛪
 
