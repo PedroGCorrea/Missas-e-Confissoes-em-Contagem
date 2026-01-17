@@ -1,177 +1,193 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS
+   ========================================================================== */
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     background-color: #f0f2f5;
+    color: #333;
 }
 
 header {
     background-color: #2c3e50;
     color: white;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
     position: sticky;
-    /* Mantém o topo visível ao rolar */
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ==========================================================================
+   2. SISTEMA DE FILTROS
+   ========================================================================== */
 .filter-group {
     display: flex;
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
-.filter-group input {
+.filter-group input,
+.filter-group select {
     padding: 12px;
     border-radius: 8px;
-    border: none;
-    min-width: 200px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 0.9rem;
+    min-width: 180px;
+    outline: none;
 }
 
+.filter-group input:focus,
+.filter-group select:focus {
+    border-color: #1a237e;
+    box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.1);
+}
+
+.mobile-toggle {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    display: none;
+    /* Escondido por padrão, aparece no mobile */
+}
+
+/* ==========================================================================
+   3. LAYOUT DA GRADE (GRID)
+   ========================================================================== */
 #parishContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Listagem 2 em 2 */
     gap: 25px;
     padding: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* ==========================================================================
+   4. CARD DA PARÓQUIA
+   ========================================================================== */
 .card {
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     border-top: 6px solid #1a237e;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    /* Espaço entre os blocos cinzas */
-}
-
-.bairro-tag {
-    color: #666;
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-}
-
-.info-section {
-    margin-bottom: 15px;
-}
-
-.section-title {
-    display: block;
-    font-weight: bold;
-    color: #1a237e;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 5px;
-}
-
-.horarios-list {
-    line-height: 1.6;
-    /* Aumenta o espaço entre as linhas dos horários */
-    font-size: 1rem;
-    color: #444;
-    padding-left: 5px;
-}
-
-
-@media (min-width: 769px) {
-    .filter-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .filter-group input,
-    .filter-group select {
-        width: auto;
-        min-width: 150px;
-    }
-}
-
-/* Ajuste no Container para Mobile */
-@media (max-width: 768px) {
-    #parishContainer {
-        grid-template-columns: 1fr;
-        /* 1 card por linha no celular */
-        padding: 15px;
-        gap: 15px;
-    }
-
-    header {
-        padding: 0.5rem;
-        /* Menor preenchimento */
-    }
-
-    /* Garante que o grupo de filtros não estoure a tela se for muito grande */
-    .filter-group.active {
-        max-height: 70vh;
-        overflow-y: auto;
-        /* Permite rolar os filtros se necessário */
-        padding-bottom: 20px;
-    }
-}
-
-/* Estilo do Endereço dentro do card */
-.detalhe {
-    font-weight: 500;
-    color: #2c3e50;
-}
-
-.filter-group select {
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    background: white;
-    cursor: pointer;
-    min-width: 150px;
+    gap: 15px;
 }
 
 .card h2 {
     color: #1a237e;
-    margin: 0 0 10px 0;
-    font-size: 1.3rem;
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.2;
 }
 
 .info-box {
-    background-color: #f2f2f2;
-    /* Cinza claro */
-    padding: 12px;
+    background-color: #f8f9fa;
+    padding: 15px;
     border-radius: 8px;
+    border-left: 3px solid #3498db;
 }
 
-.info-box span {
+.section-title {
     display: block;
-    font-weight: bold;
-    font-size: 0.9rem;
+    font-weight: 800;
     color: #1a237e;
-    margin-bottom: 5px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
 }
 
 .detalhe,
 .horarios-list {
     margin: 0;
-    color: #333;
+    color: #444;
     font-size: 0.95rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
-.mobile-toggle {
-    display: none;
-    background: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    width: 100%;
-    font-weight: bold;
+/* ==========================================================================
+   5. TEMPLATE DE INFORMAÇÃO AUSENTE
+   ========================================================================== */
+.info-missing {
+    display: block;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    font-style: italic;
+    line-height: 1.4;
+    padding: 5px 0;
+}
+
+.info-missing a {
+    color: #1a237e;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dashed #1a237e;
+}
+
+.info-missing a:hover {
+    color: #34495e;
+    border-bottom-style: solid;
+}
+
+/* ==========================================================================
+   6. RESPONSIVIDADE
+   ========================================================================== */
+
+/* Tablet e Desktop Pequeno */
+@media (max-width: 1024px) {
+    #parishContainer {
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: block;
+    }
+
+    #parishContainer {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .filter-group {
+        display: none;
+        /* Esconde filtros no mobile por padrão */
+        flex-direction: column;
+    }
+
+    .filter-group.active {
+        display: flex;
+        max-height: 70vh;
+        overflow-y: auto;
+        padding-bottom: 20px;
+    }
+
+    .filter-group input,
+    .filter-group select {
+        width: 100%;
+    }
 }

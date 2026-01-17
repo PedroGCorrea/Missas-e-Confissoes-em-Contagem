@@ -4,11 +4,16 @@
         "bairro": "Centro",
         "endereco": "Rua Bueno Brandão, 40",
         "missas": [
-            "Domingo: 07h, 09h, 19h",
-            "Quarta: 19h"
+            "Segunda: 19hrs",
+            "Terça: 19hrs",
+            "Quarta: 19hrs",
+            "Quinta: 19hrs",
+            "Sexta: 16hrs, 19hrs",
+            "Domingo: 07hrs, 09hrs, 18hrs, 20hrs",
+            "Toda segunda sexta do mês: 05hrs"
         ],
         "confissoes": [
-            "Terça, Quarta, Quinta, Sexta: 14h às 17h"
+            "Terça, Quarta, Quinta, Sexta: 14hrs às 17hrs"
         ]
     },
     {
@@ -16,11 +21,11 @@
         "bairro": "Eldorado",
         "endereco": "Praça Nossa Senhora da Glória, s/n",
         "missas": [
-            "Quarta: 16h",
-            "Quinta: 19h",
-            "Sexta: 19h",
-            "Sábado: 18h",
-            "Domingo: 07h, 09h, 18h"
+            "Quarta: 16hrs",
+            "Quinta: 19hrs",
+            "Sexta: 19hrs",
+            "Sábado: 18hrs",
+            "Domingo: 07hrs, 09hrs, 18hrs"
         ],
         "confissoes": [
             "Olhar com o Celebrante após a missa"
@@ -31,18 +36,18 @@
         "bairro": "Novo Eldorado",
         "endereco": "Praça Nossa Senhora da Conceição, 150",
         "missas": [
-            "Segunda: 7:30h",
-            "Terça: 7:30h, 19h",
-            "Quarta: 7:30h, 19h",
-            "Quinta: 7:30h",
-            "Sexta: 7:30h, 19h",
-            "Sábado: 7:30h, 18h",
-            "Domingo: 07h, 09h, 11h, 18h",
-            "Todo dia 12 do mês (exceto aos domingos): 7:30h, 12h, 19h"
+            "Segunda: 7:30hrs",
+            "Terça: 7:30hrs, 19hrs",
+            "Quarta: 7:30hrs, 19hrs",
+            "Quinta: 7:30hrs",
+            "Sexta: 7:30hrs, 19hrs",
+            "Sábado: 7:30hrs, 18hrs",
+            "Domingo: 07hrs, 09hrs, 11hrs, 18hrs",
+            "Todo dia 12 do mês (exceto aos domingos): 7:30hrs, 12hrs, 19hrs"
         ],
         "confissoes": [
             "Terça, Quarta, Quinta, Sexta, Sábado: Após a missa das 7:30 (A depender do Celebrante)",
-            "Todo dia 12 do mês (exceto aos domingos): 09h às 11h"
+            "Todo dia 12 do mês (exceto aos domingos): 09hrs às 11hrs"
         ]
     },
     {
@@ -50,12 +55,12 @@
         "bairro": "Gloria",
         "endereco": "Rua Bélgica, 132",
         "missas": [
-            "Terça: 19h",
-            "Quinta: 19h",
-            "Sábado: 19h",
-            "Domingo: 07h, 09:30h, 19h",
-            "Primeira Sexta de cada mes: 19h",
-            "Todo dia 28: 06h, 08h, 10h, 15h, 18h, 20h"
+            "Terça: 19hrs",
+            "Quinta: 19hrs",
+            "Sábado: 19hrs",
+            "Domingo: 07hrs, 09:30hrs, 19hrs",
+            "Primeira Sexta de cada mes: 19hrs",
+            "Todo dia 28: 06hrs, 08hrs, 10hrs, 15hrs, 18hrs, 20hrs"
         ],
         "confissoes": [
             "Marcar na secretaría: (31) 3392-2055 / psjt@terra.com.br"
@@ -66,14 +71,126 @@
         "bairro": "Eldorado",
         "endereco": "Rua Altino Ribeiro, 141",
         "missas": [
-            "Quarta: 19h",
-            "Sábado: 18h",
-            "Domingo: 08h, 18h",
-            "Primeira Sexta de cada mes: 18h",
-            "Todo dia 20: 19h"
+            "Quarta: 19hrs",
+            "Sábado: 18hrs",
+            "Domingo: 08hrs, 18hrs",
+            "Primeira Sexta de cada mes: 18hrs",
+            "Todo dia 20: 19hrs"
         ],
         "confissoes": [
             "Marcar na secretaría: (31) 3392-2055 / psjt@terra.com.br"
         ]
+    },
+    {
+        "nome": "Paróquia Nossa Senhora do Rosário",
+        "bairro": "Alvorada",
+        "endereco": "R. Cristóvão Macedo, 578",
+        "missas": [
+            "Domingo: 9hrs e 18hrs",
+            "Terça: 19hrs",
+            "Quinta: 19hrs",
+            "1a Sexta-Feira: 19hrs"
+        ],
+        "confissoes": []
+    },
+    {
+        "nome": "Paróquia Nossa Senhora das Dores",
+        "bairro": "Santa Helena",
+        "endereco": "R. Antônio de Pádua Pinto, 355",
+        "missas": [
+            "Domingo: 07hrs e 19:30hrs",
+            "Sexta: 19:30hrs"
+        ],
+        "confissoes": []
+    },
+    {
+        "nome": "Paróquia Jesus Operário",
+        "bairro": "Petrolândia",
+        "endereco": "R. Refinária Duque de Caxias, 161",
+        "missas": [
+            "2º, 4º e 5º domingos: 07hrs",
+            "Domingo: 9hrs",
+            "1º e 3º domingos: 19:30hrs",
+            "Quinta-Feira: 19:30hrs"
+        ],
+        "confissoes": []
+    },
+    {
+        "nome": "Paróquia Santa Edwiges e São Norberto",
+        "bairro": "Bela Vista",
+        "endereco": "R. Des. Luciano Souza Lima, 260",
+        "missas": [
+            "Domingo: 07hrs, 9hrs e 19hrs",
+            "Quinta: 07hrs e 19hrs",
+            "Terça: 19hrs"
+        ],
+        "confissoes": []
+    },
+    {
+        "nome": "Paróquia São Domingos",
+        "bairro": "Nova Contagem",
+        "endereco": "R. Vl | 37, 275",
+        "missas": [
+            "Domingo: 08hrs e 18hrs",
+            "Quarta: 19:30hrs"
+        ],
+        "confissoes": []
+    },
+    {
+        "nome": "Paróquia Bom Jesus do Amparo",
+        "bairro": "Parque Sao Joao",
+        "endereco": "R. Gurupi, 229",
+        "missas": [
+            "Domingo: 08hrs, 10hrs e 19hrs",
+            "Quinta e Sexta: 19:30hrs"
+        ],
+        "confissoes": []
+    },
+    {
+        "nome": "Paróquia Nossa Senhora do Perpétuo Socorro",
+        "bairro": "Jardim Bandeirantes",
+        "endereco": "Av. Água Branca, 283",
+        "missas": [
+            "Domingo: 7hrs e 17:30hrs",
+            "Quarta: 19:30hrs",
+            "1a Sexta-Feira: 19:30hrs",
+            "Todo dia 27: 15hrs"
+        ],
+        "confissoes": []
+    },
+    {
+        "nome": "Paróquia Santa Cruz",
+        "bairro": "Santa Cruz",
+        "endereco": "Praça Paris, 130",
+        "missas": [
+            "Domingo: 08hrs, 10hrs e 19hrs",
+            "Sábado: 19hrs",
+            "1a Sexta-Feira: 19hrs",
+            "Quarta-Feira: 19hrs",
+            "Terça-Feira: 15hrs"
+        ],
+        "confissoes": []
+    },
+    {
+        "nome": "Paróquia Santa Maria, Rainha dos Apóstolos",
+        "bairro": "JK",
+        "endereco": "R. Delfim Moreira, 215",
+        "missas": [
+            "Domingo: 08hrs, 10hrs e 18hrs",
+            "Sábado: 18hrs",
+            "Terça, Quinta e Sexta: 19hrs"
+        ],
+        "confissoes": []
+    },
+    {
+        "nome": "Paróquia Cristo Rei",
+        "bairro": "Industrial Itau",
+        "endereco": "R. Oliveira, 192",
+        "missas": [
+            "Domingo: 07:30hrs, 10hrs e 19hrs",
+            "Sábado: 18:30hrs",
+            "Terça à Sexta: 19hrs"
+        ],
+        "confissoes": []
     }
 ]

@@ -1,11 +1,12 @@
-let paroquias = []
-
+let paroquias = [];
 
 const container = document.getElementById('parishContainer');
 const selectBairro = document.getElementById('filterBairro');
-
 const btnToggle = document.getElementById('btnToggleFilters');
 const filterGroup = document.getElementById('filterGroup');
+
+// Template para informações ausentes
+const MSG_AUSENTE = `<span class="info-missing">Informação ainda não contemplada. Caso queira contribuir, entre em contato: <a href="mailto:pedrogcorrea3@gmail.com">pedrogcorrea3@gmail.com</a></span>`;
 
 
 async function carregarDados() {
@@ -14,9 +15,8 @@ async function carregarDados() {
         paroquias = await resposta.json();
         console.log("Dados carregados com sucesso:", paroquias);
 
-        // ORDEM IMPORTANTE:
-        popularBairros(); // Primeiro cria as opções de bairro
-        render();         // Depois mostra as paróquias na tela
+        popularBairros();
+        render();
     } catch (erro) {
         console.error("Erro ao carregar os dados:", erro);
     }
@@ -24,10 +24,10 @@ async function carregarDados() {
 
 function popularBairros() {
     const selectBairro = document.getElementById('filterBairro');
-    // Limpa o select antes de popular (caso já tenha algo)
     selectBairro.innerHTML = '<option value="">Todos os Bairros</option>';
 
-    const bairrosUnicos = [...new Set(paroquias.map(p => p.bairro))].sort();
+    // Filtra bairros que não estão vazios para não criar opção em branco no select
+    const bairrosUnicos = [...new Set(paroquias.map(p => p.bairro).filter(b => b !== ""))].sort();
 
     bairrosUnicos.forEach(bairro => {
         const option = document.createElement('option');
@@ -36,6 +36,7 @@ function popularBairros() {
         selectBairro.appendChild(option);
     });
 }
+
 function render() {
     const nomeVal = document.getElementById('filterNome').value.toLowerCase();
     const bairroVal = document.getElementById('filterBairro').value;
@@ -58,8 +59,22 @@ function render() {
     });
 
     filtradas.forEach(p => {
-        const missasFormatadas = p.missas.map(horario => `• ${horario}`).join('<br>');
-        const confissoesFormatadas = p.confissoes.map(horario => `• ${horario}`).join('<br>');
+        // Lógica para formatar listas ou exibir o template
+        const missasFormatadas = p.missas.length > 0
+            ? p.missas.map(horario => `• ${horario}`).join('<br>')
+            : MSG_AUSENTE;
+
+        const confissoesFormatadas = p.confissoes.length > 0
+            ? p.confissoes.map(horario => `• ${horario}`).join('<br>')
+            : MSG_AUSENTE;
+
+        // Lógica para endereço e bairro
+        let localizacao = "";
+        if (!p.endereco && !p.bairro) {
+            localizacao = MSG_AUSENTE;
+        } else {
+            localizacao = `${p.endereco ? p.endereco : ''}${p.endereco && p.bairro ? ' - ' : ''}${p.bairro}`;
+        }
 
         const div = document.createElement('div');
         div.className = 'card';
@@ -68,7 +83,7 @@ function render() {
         
         <div class="info-box">
             <span class="section-title">📍 Endereço e Bairro</span>
-            <p class="detalhe">${p.endereco ? p.endereco + ' - ' : ''}${p.bairro}</p>
+            <p class="detalhe">${localizacao}</p>
         </div>
 
         <div class="info-box">
@@ -91,8 +106,6 @@ document.querySelectorAll('.filter-group input, .filter-group select').forEach(e
 
 btnToggle.addEventListener('click', () => {
     filterGroup.classList.toggle('active');
-
-    // Opcional: Mudar o texto do botão quando aberto
     if (filterGroup.classList.contains('active')) {
         btnToggle.textContent = "🔼 Fechar Filtros";
     } else {
